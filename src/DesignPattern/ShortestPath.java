@@ -37,7 +37,9 @@ public class ShortestPath {
                         List<Integer> path = new ArrayList<>();
                         while (parent.containsKey(neighbor)) {
                             path.add(neighbor);
-                            neighbor = Integer.parseInt(String.valueOf(parent.get(neighbor)));
+                            if(parent.get(neighbor)!=null){
+                                neighbor =(int) parent.get(neighbor);
+                            }
                         }
                         Collections.reverse(path);
                         return path;
