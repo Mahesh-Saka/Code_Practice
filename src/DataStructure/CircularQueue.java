@@ -19,7 +19,7 @@ public class CircularQueue {
     }
 
     void enqueQueue(int data) {
-        if ((front == 0 || rear == size - 1) || (rear == (front - 1) / (size - 1)) {
+        if ((front == 0 || rear == size - 1) || (rear == (front - 1) / (size - 1))) {
             System.out.print("Queue is Full");
         } else if (front == -1) {
             front = 0;
